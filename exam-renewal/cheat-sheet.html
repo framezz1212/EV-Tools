@@ -1,0 +1,390 @@
+<title>สรุปจำเร็ว — แนวข้อสอบ ตรอ. ต่ออายุ 211 ข้อ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{
+  --bg:#fafbfd; --surface:#ffffff; --ink:#16233a; --muted:#5b6b83; --line:#dde4ee;
+  --accent:#1d5fa8; --accent-soft:#eaf1fa; --ok:#157a4a; --ok-bg:#e9f6ef; --ok-line:#bfe3cf;
+  --warn:#a35a00; --warn-bg:#fdf3e4; --warn-line:#ecd6ae;
+  --chip:#eef3fa; --code:#f0f4fa;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#0f1621; --surface:#18212f; --ink:#e7edf6; --muted:#93a3ba; --line:#2a3648;
+  --accent:#6aa3e0; --accent-soft:#1c2a3f; --ok:#5ecb96; --ok-bg:#15301f; --ok-line:#2b5c40;
+  --warn:#e8b05f; --warn-bg:#33260f; --warn-line:#5c4a22;
+  --chip:#222e40; --code:#1f2a3b;
+}}
+:root[data-theme="dark"]{
+  --bg:#0f1621; --surface:#18212f; --ink:#e7edf6; --muted:#93a3ba; --line:#2a3648;
+  --accent:#6aa3e0; --accent-soft:#1c2a3f; --ok:#5ecb96; --ok-bg:#15301f; --ok-line:#2b5c40;
+  --warn:#e8b05f; --warn-bg:#33260f; --warn-line:#5c4a22;
+  --chip:#222e40; --code:#1f2a3b;
+}
+:root[data-theme="light"]{
+  --bg:#fafbfd; --surface:#ffffff; --ink:#16233a; --muted:#5b6b83; --line:#dde4ee;
+  --accent:#1d5fa8; --accent-soft:#eaf1fa; --ok:#157a4a; --ok-bg:#e9f6ef; --ok-line:#bfe3cf;
+  --warn:#a35a00; --warn-bg:#fdf3e4; --warn-line:#ecd6ae;
+  --chip:#eef3fa; --code:#f0f4fa;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Noto Sans Thai","Sarabun","Leelawadee UI",Tahoma,system-ui,sans-serif;
+  line-height:1.65;font-size:16px;}
+.wrap{max-width:780px;margin:0 auto;padding:0 16px 96px;}
+header.top{padding:40px 0 12px;}
+.eyebrow{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600;}
+h1{font-size:clamp(24px,4.5vw,33px);line-height:1.3;margin:.35em 0 .2em;text-wrap:balance;font-weight:700;}
+.sub{color:var(--muted);margin:0;font-size:15px;}
+h2{font-size:20px;margin:38px 0 6px;font-weight:700;color:var(--ink);
+  display:flex;align-items:center;gap:10px;}
+h2 .zone{background:var(--accent);color:#fff;border-radius:8px;font-size:13px;padding:2px 10px;font-weight:700;white-space:nowrap;}
+:root[data-theme="dark"] h2 .zone{color:#0f1621;}
+@media (prefers-color-scheme: dark){h2 .zone{color:#0f1621;}}
+:root[data-theme="light"] h2 .zone{color:#fff;}
+h3{font-size:16.5px;margin:20px 0 8px;font-weight:700;}
+.range{font-size:13px;color:var(--muted);font-weight:500;}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0;}
+table{border-collapse:collapse;width:100%;font-size:15px;font-variant-numeric:tabular-nums;}
+.tbl-wrap{overflow-x:auto;margin:10px 0;}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top;}
+th{background:var(--chip);font-weight:600;font-size:14px;}
+td b,li b,p b{color:var(--accent);}
+td .ok, .ok-t{color:var(--ok);font-weight:700;}
+.mn{background:var(--ok-bg);border:1px solid var(--ok-line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:15.5px;}
+.mn::before{content:"🧠 ท่องว่า: ";font-weight:700;color:var(--ok);}
+.trap{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:15px;}
+.trap::before{content:"⚠️ กับดัก: ";font-weight:700;color:var(--warn);}
+ul,ol{margin:8px 0;padding-left:22px;}
+li{margin:4px 0;}
+.big{font-size:22px;font-weight:800;letter-spacing:.02em;color:var(--accent);
+  font-variant-numeric:tabular-nums;}
+.pattern-grid{display:grid;grid-template-columns:1fr;gap:8px;margin:14px 0;}
+.pat{display:flex;gap:12px;align-items:baseline;background:var(--surface);border:1px solid var(--line);
+  border-left:4px solid var(--accent);border-radius:10px;padding:10px 14px;}
+.pat .no{font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums;white-space:nowrap;min-width:74px;font-size:14px;}
+.pat .tt{flex:1;font-size:15px;}
+.pat .ct{color:var(--muted);font-size:13px;white-space:nowrap;}
+code{background:var(--code);border-radius:6px;padding:1px 7px;font-size:14px;
+  font-family:"SFMono-Regular",Consolas,monospace;}
+footer.src{margin-top:44px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;}
+footer.src a{color:var(--accent);}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 4px;}
+.toc a{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:4px 13px;
+  font-size:13.5px;text-decoration:none;color:var(--ink);}
+.toc a:hover{border-color:var(--accent);color:var(--accent);}
+section{scroll-margin-top:16px;}
+</style>
+<div class="wrap">
+<header class="top">
+  <p class="eyebrow">สรุปติวจำเร็ว · แนวข้อสอบ E-Learning ตรอ. (แบบต่ออายุ)</p>
+  <h1>แพทเทิร์นข้อสอบ 211 ข้อ — แบ่งเป็น 6 โซนใหญ่ จำแค่นี้พอ</h1>
+  <p class="sub">วิเคราะห์จากโจทย์จริงทั้ง 211 ข้อ · ตัวเลขในนี้คือคำตอบที่ออกสอบตรงๆ</p>
+  <nav class="toc">
+    <a href="#z1">① กฎหมาย/บัตร</a>
+    <a href="#z2">② บทลงโทษ</a>
+    <a href="#z3">③ IT/เครื่องมือ</a>
+    <a href="#z4">④ ประเภทรถ</a>
+    <a href="#z5">⑤ การตรวจวัด</a>
+    <a href="#z6">⑥ ก๊าซ CNG/LPG</a>
+    <a href="#traps">🎯 กับดักรวม</a>
+  </nav>
+</header>
+
+<section>
+<h2>ภาพรวม: ข้อสอบเรียงเป็นบล็อกตามหัวข้อ ไม่สุ่ม</h2>
+<p>ข้อสอบชุดนี้เรียงตามหมวดเนื้อหาเป็นช่วงๆ ชัดเจน — รู้ว่ากำลังทำข้อช่วงไหน จะเดาแนวคำตอบได้ทันที:</p>
+<div class="pattern-grid">
+  <div class="pat"><span class="no">1–26</span><span class="tt">กฎหมายจัดตั้ง ตรอ. · บัตรประจำตัว 4 ประเภท · รหัสบัตร · ต่ออายุ</span><span class="ct">26 ข้อ</span></div>
+  <div class="pat"><span class="no">27–34</span><span class="tt">เครื่องตรวจสภาพที่ต้องมี/ไม่ต้องมี · ค่าตรวจสภาพ</span><span class="ct">8 ข้อ</span></div>
+  <div class="pat"><span class="no">35–39</span><span class="tt">รถที่ต้องตรวจก่อนเสียภาษี · ตรวจล่วงหน้า</span><span class="ct">5 ข้อ</span></div>
+  <div class="pat"><span class="no">40–62</span><span class="tt">บทลงโทษ: ตักเตือน → ระงับชั่วคราว → เพิกถอน</span><span class="ct">23 ข้อ</span></div>
+  <div class="pat"><span class="no">63–70</span><span class="tt">ระบบสารสนเทศ กล้อง เน็ต การลงทะเบียน</span><span class="ct">8 ข้อ</span></div>
+  <div class="pat"><span class="no">71–90</span><span class="tt">ประเภทรถ 2 พ.ร.บ. · โคมไฟ/ส่วนควบ · มิติรถ A B C D H</span><span class="ct">20 ข้อ</span></div>
+  <div class="pat"><span class="no">91–103</span><span class="tt">การตรวจพินิจ · อุปกรณ์ติดตั้งเพิ่ม (แจ้ง/ไม่ต้องแจ้งนายทะเบียน)</span><span class="ct">13 ข้อ</span></div>
+  <div class="pat"><span class="no">104–112</span><span class="tt">ดูรูปเรียกชื่อรถ + จัดกลุ่ม รย.1 / รย.2 / รย.3</span><span class="ct">9 ข้อ</span></div>
+  <div class="pat"><span class="no">113–131</span><span class="tt">หลักเกณฑ์วินิจฉัยผลตรวจ รย.1 / รย.2 / รย.3 / รย.12</span><span class="ct">19 ข้อ</span></div>
+  <div class="pat"><span class="no">132–143</span><span class="tt">ไอเสีย CO / HC (แยกตามเชื้อเพลิงและปีจดทะเบียน)</span><span class="ct">12 ข้อ</span></div>
+  <div class="pat"><span class="no">144–156</span><span class="tt">ควันดำ (กระดาษกรอง / ทึบแสง) + ข้อ 190</span><span class="ct">14 ข้อ</span></div>
+  <div class="pat"><span class="no">157–169</span><span class="tt">โคมไฟหน้า: ความเข้ม มุมกด ทิศเบี่ยงเบน + ข้อ 199</span><span class="ct">14 ข้อ</span></div>
+  <div class="pat"><span class="no">170–174</span><span class="tt">แรงห้ามล้อ (เบรก) · ศูนย์ล้อ</span><span class="ct">5 ข้อ</span></div>
+  <div class="pat"><span class="no">175–195</span><span class="tt">การตรวจวัดระดับเสียง</span><span class="ct">20 ข้อ</span></div>
+  <div class="pat"><span class="no">196–211</span><span class="tt">ระบบก๊าซ CNG / LPG</span><span class="ct">15 ข้อ</span></div>
+</div>
+<p>สังเกต: <b>ครึ่งหลัง (ข้อ 132–211) เป็น "ตัวเลขล้วน"</b> — จำชุดตัวเลขด้านล่างได้ = เก็บ ~80 ข้อ</p>
+</section>
+
+<section id="z1">
+<h2><span class="zone">โซน ①</span> กฎหมาย · บัตรประจำตัว <span class="range">(ข้อ 1–26, 70)</span></h2>
+
+<div class="card">
+<h3>🪪 รหัสบัตร — ดู "หลักที่ 3" ตัวเดียวจบ (ออก ~8 ข้อ!)</h3>
+<p>บัตรมี <b>4 ประเภท</b> รูปแบบรหัส <code>XX?XXXXXX</code> — หลักที่ 3 บอกทุกอย่าง:</p>
+<div class="tbl-wrap"><table>
+<tr><th>หลักที่ 3</th><th>คือใคร</th><th>ตรวจอะไรได้</th></tr>
+<tr><td class="big">1</td><td><b>ผู้ควบคุม</b>การตรวจสภาพรถ</td><td>รถโดยสาร/บรรทุก + รย.1, 2, 3 <b>และ 12</b> (ได้หมด)</td></tr>
+<tr><td class="big">2</td><td><b>เจ้าหน้าที่</b>ตรวจสภาพรถ</td><td>รถโดยสาร/บรรทุก + รย.1, 2, 3 และ 12</td></tr>
+<tr><td class="big">3</td><td><b>ผู้ควบคุม</b>ฯ รถจักรยานยนต์</td><td>รย.12 (มอเตอร์ไซค์) เท่านั้น</td></tr>
+<tr><td class="big">4</td><td><b>เจ้าหน้าที่</b>ฯ รถจักรยานยนต์</td><td>รย.12 (มอเตอร์ไซค์) เท่านั้น</td></tr>
+</table></div>
+<div class="mn">"<b>คี่ = คุม, คู่ = ช่าง</b> · <b>1–2 ตรวจได้หมด, 3–4 มอไซค์อย่างเดียว</b>"</div>
+<ul>
+<li><b>2 user</b> (ลงทะเบียน 2 ชื่อ): คนถือบัตรรหัส <b>2 และ 3</b> → เพราะเป็นได้ทั้งช่างรถใหญ่+คุมมอไซค์ (ออกซ้ำ 2 ข้อ: 7, 8)</li>
+<li>ตัวอย่างข้อสอบ: <code>633022222</code> หลัก 3 = <b>3</b> → ผู้ควบคุมฯ จยย. <b>ตรวจ จยย. ได้คนเดียว</b> · <code>634011111</code> หลัก 3 = <b>4</b> → เจ้าหน้าที่ฯ จยย. <b>ต้องทำร่วมกับผู้ควบคุม</b></li>
+<li>ผู้ควบคุม = ตรวจสอบ + <b>"วินิจฉัยผล"</b> · เจ้าหน้าที่ = ตรวจสอบเฉยๆ (คำว่า "วินิจฉัย" คือจุดต่างในโจทย์นิยาม ข้อ 9–10, 24)</li>
+<li>ลงทะเบียนที่เว็บ <code>v5.inspection.in.th</code> (ข้อ 70)</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>⏰ ตัวเลขวัน/เวลา ที่ออกสอบตรงๆ</h3>
+<div class="tbl-wrap"><table>
+<tr><th>เรื่อง</th><th>ตัวเลขคำตอบ</th></tr>
+<tr><td>ต่ออายุ<b>บัตรประจำตัว</b></td><td>ก่อนสิ้นอายุภายใน <b>180 วัน</b> แต่ไม่น้อยกว่า <b>30 วัน</b> · บัตรขาดแล้วต่อได้ไม่เกิน <b>1 ปี</b></td></tr>
+<tr><td>บัตรสิ้นสุดลง</td><td>ขาดเกิน <b>1 ปี</b> / ตาย / วิกลจริต / ถูก<b>นายทะเบียน</b>ยกเลิก (ศาลสั่งยกเลิก = ตัวหลอก!)</td></tr>
+<tr><td>ต่ออายุ<b>ใบอนุญาตจัดตั้ง ตรอ.</b></td><td>ก่อนสิ้นอายุ<b>ไม่น้อยกว่า 30 วัน</b></td></tr>
+<tr><td>เลิกกิจการ</td><td>แจ้งนายทะเบียนภายใน <b>60 วัน</b></td></tr>
+<tr><td>เก็บข้อมูลผลตรวจ</td><td><b>ไม่น้อยกว่า 1 ปี</b> (ระวังตัวหลอก "เพียง 1 ปี / ไม่เกิน 1 ปี")</td></tr>
+<tr><td>ตรวจสภาพล่วงหน้าก่อนภาษีขาด</td><td>ไม่เกิน <b>3 เดือน</b></td></tr>
+<tr><td>รถไม่ผ่าน กลับมาตรวจซ้ำ</td><td>เกิน <b>15 วัน</b> = ตรวจใหม่<b>ทุกรายการ</b></td></tr>
+<tr><td>เปลี่ยนผู้ควบคุม/ผู้ตรวจ</td><td>แจ้ง<b>ก่อน</b>เริ่มตรวจสภาพ (ไม่ใช่ 7/15/30 วัน)</td></tr>
+</table></div>
+<div class="mn">"บัตร <b>180–30–1ปี</b> · ใบอนุญาต <b>30</b> · เลิก <b>60</b> · เก็บ <b>1 ปี</b> · ล่วงหน้า <b>3 เดือน</b> · ตรวจซ้ำ <b>15 วัน</b>"</div>
+<ul>
+<li>ตรอ. จัดตั้งตาม <b>พ.ร.บ.การขนส่งทางบก พ.ศ. 2522</b> (ไม่ใช่ พ.ร.บ.รถยนต์! — ข้อ 1)</li>
+<li>ใครยกเลิกบัตร/รับแจ้งทุกเรื่อง = <b>นายทะเบียน</b> (เปลี่ยนอาคาร/เครื่องมือ/คน → นายทะเบียน<b>จังหวัดที่ ตรอ. ตั้งอยู่</b>)</li>
+<li>อาคาร ตรอ. = พื้นที่ตรวจ + ที่ทำการ + ที่พักผู้ใช้บริการ + <b>ห้องสุขา</b> (ครบ 4 อย่าง)</li>
+<li>ค่าตรวจ: รถเปล่า 2,100 กก. (เกิน 2,000) = <b>300 บาท</b></li>
+</ul>
+</div>
+</section>
+
+<section id="z2">
+<h2><span class="zone">โซน ②</span> บทลงโทษ 3 ระดับ <span class="range">(ข้อ 40–62 — 23 ข้อ เก็บง่ายสุด)</span></h2>
+
+<div class="card">
+<h3>⚖️ โครงสร้างโทษ: ตักเตือน → ระงับชั่วคราว → เพิกถอน</h3>
+<p>ระงับชั่วคราว มี <b>4 ระดับ / สั่งระงับได้ 3 ครั้ง</b> ครั้งที่ 4 = เพิกถอน:</p>
+<p class="big" style="text-align:center;margin:14px 0;">7 → 15 → 30 → เพิกถอน</p>
+<p style="text-align:center;color:var(--muted);font-size:14px;margin-top:-8px;">(วันทำการ · ตัวเลขคูณสองไปเรื่อยๆ)</p>
+<div class="tbl-wrap"><table>
+<tr><th>ระดับโทษ</th><th>จำจากคีย์เวิร์ดของความผิด</th></tr>
+<tr><td class="ok-t">ตักเตือน</td><td>เรื่อง "จุกจิก-เอกสาร-ความสะอาด": ไม่แจ้งวัน-เวลาทำการ · ไม่มีป้ายชื่อ/ป้ายประเภทรถ · ไม่ดูแลอาคารให้สะอาด · ไม่ปรับเทียบ/บำรุงรักษาเครื่องมือ · เปลี่ยนรอยตราประทับไม่แจ้ง</td></tr>
+<tr><td style="color:var(--warn);font-weight:700;">ระงับชั่วคราว</td><td>เรื่อง "กระทบผลตรวจจริง": เครื่องมือ<b>ชำรุด/ปรับเทียบไม่ได้</b> · ตรวจ<b>นอกพื้นที่</b>ที่ได้รับอนุญาต · <b>ไม่มีผู้ควบคุม/เจ้าหน้าที่</b>ที่ผ่านอบรม · ไม่จัดทำใบรับรอง/บันทึก/รายงานผลตรวจ · เปลี่ยนแปลงอาคาร/ลานจอดโดยไม่ได้รับอนุญาต · เปิดไม่ตรงเวลา<b>ครั้งที่ 5</b> → ระงับ 15 วันทำการ</td></tr>
+<tr><td style="color:#c0392b;font-weight:700;">เพิกถอน</td><td><b>"ทุจริต/จงใจ"</b> ออกใบรับรองไม่ตรงจริง หรือออกใบรับรองโดยไม่ตรวจจริง — เพิกถอนโดย<b>นายทะเบียนกลาง</b></td></tr>
+<tr><td style="font-weight:700;">ปรับสถานเดียว</td><td>เก็บ<b>ค่าตรวจไม่ตรงอัตรา</b> (ข้อ 26 — โดดจากพวก จำแยกไว้เลย)</td></tr>
+</table></div>
+<div class="mn">"จุกจิก=เตือน · กระทบผลตรวจ=ระงับ <b>7-15-30-ถอน</b> · โกง=ถอนทันที · เก็บเงินเกิน=ปรับ"</div>
+</div>
+</section>
+
+<section id="z3">
+<h2><span class="zone">โซน ③</span> ระบบ IT · เครื่องมือ <span class="range">(ข้อ 27–34, 63–70)</span></h2>
+<div class="card">
+<div class="tbl-wrap"><table>
+<tr><th>เรื่อง</th><th>ตัวเลข/คำตอบ</th></tr>
+<tr><td>ขนาดไฟล์ภาพถ่ายรถ</td><td><b>50 – 100 KB</b></td></tr>
+<tr><td>ความเร็วอินเทอร์เน็ต</td><td>ไม่น้อยกว่า <b>6 Mbps</b></td></tr>
+<tr><td>กล้องถ่ายภาพ</td><td>ไม่น้อยกว่า <b>1 ล้านพิกเซล</b></td></tr>
+<tr><td>ค่าละติจูด/ลองจิจูด ("ดึงค่าที่ตั้ง")</td><td>ตัวเลข<b>จุดทศนิยม</b> · อยู่ในหัวข้อ "รายละเอียดผู้ใช้งาน"</td></tr>
+<tr><td>อุปกรณ์เชื่อมต่อสารสนเทศ</td><td>คอมพิวเตอร์ + เครื่องพิมพ์ + กล้อง + <b>Router</b> + CCTV (<b>Hard Disk ไม่ใช่</b> — ตัวหลอกข้อ 67)</td></tr>
+</table></div>
+<div class="mn">"ภาพ <b>50–100K</b> เน็ต <b>6M</b> กล้อง <b>1M พิกเซล</b>"</div>
+<ul>
+<li>เครื่องมือที่<b>ไม่ต้องมี</b>: จยย. → ไม่ต้องมี<b>เครื่องวัดก๊าซรั่ว</b> (ออก 2 ข้อ) · รถเล็ก ≤2,200 กก. → ไม่ต้องมี<b>เครื่องวัดฟิล์มกรองแสง</b> · ตรอ.ขนส่ง → ไม่ต้องมี<b>ลูกกลิ้งอิสระ</b> · "เครื่องวัดความเร็วรอบเครื่องยนต์" ไม่ใช่อุปกรณ์อำนวยความสะดวก</li>
+</ul>
+</div>
+</section>
+
+<section id="z4">
+<h2><span class="zone">โซน ④</span> ประเภทรถ · 2 พ.ร.บ. · มิติรถ <span class="range">(ข้อ 71–131)</span></h2>
+
+<div class="card">
+<h3>🚗 แยกให้ได้ก่อน: รย. คืออะไร + เส้นแบ่ง 2 กฎหมาย</h3>
+<ul>
+<li>ตรอ. ตรวจได้ 4 ประเภท: <b>รย.1</b> นั่งส่วนบุคคล ≤7 คน · <b>รย.2</b> นั่ง &gt;7 คน (รวมคนขับ<b>ไม่เกิน 12 ที่นั่ง</b>) · <b>รย.3</b> บรรทุกส่วนบุคคล (กระบะ) · <b>รย.12</b> จักรยานยนต์</li>
+<li>เส้นแบ่ง พ.ร.บ.: น้ำหนักรถเปล่า <b>&gt; 2,200 กก. → พ.ร.บ.ขนส่งทางบก</b> / ไม่เกิน → พ.ร.บ.รถยนต์</li>
+<li>ยกเว้นจำพิเศษ: <b>รถพ่วง รถแทรกเตอร์ → อยู่ใต้ พ.ร.บ.รถยนต์</b> (ข้อ 77 ตัวหลอกคลาสสิก)</li>
+<li>อายุรถที่ต้องเริ่มตรวจ: รย.1/2/3 ครบ <b>7 ปี</b> · จยย. ครบ <b>5 ปี</b> · ค้างภาษีเกิน 1 ปี (แต่ไม่เกิน 3 ปี) ตรวจที่ ตรอ. ได้ · <b>ขาดเกิน 3 ปี → ต้องไปขนส่ง ตรอ.ตรวจไม่ได้</b></li>
+</ul>
+</div>
+
+<div class="card">
+<h3>📐 มิติรถบรรทุก — สัญลักษณ์ 5 ตัว (ออก 5 ข้อ: 85–90)</h3>
+<div class="tbl-wrap"><table>
+<tr><th>ตัวอักษร</th><th>A</th><th>B</th><th>C</th><th>D</th><th>H</th></tr>
+<tr><td><b>คือ</b></td><td>ความ<b>ยาว</b>สุด</td><td><b>ช่วงล้อ</b></td><td>ส่วนยื่น<b>ท้าย</b></td><td>ส่วนยื่น<b>หน้า</b></td><td>ความ<b>สูง</b></td></tr>
+</table></div>
+<div class="mn">"A ยาว · B ช่วงล้อ (Base) · C ยื่นท้าย (Cาง=หาง) · D ยื่นหน้า (Dั้งหน้า) · H สูง (Height)"</div>
+<ul>
+<li>วัดช่วงล้อ: ศูนย์กลางเพลาหน้าสุด → ศูนย์กลางเพลาท้าย · ถ้าเพลาท้ายเป็น<b>เพลาคู่</b> → วัดถึง<b>กึ่งกลางกลุ่มเพลาท้าย</b></li>
+<li>ที่นั่งแบบ "ก" = จัดวางตาม<b>ความกว้าง</b>ของตัวรถ</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🖼️ ข้อรูปภาพ 104–108 (เฉลยตายตัว จำได้เลย)</h3>
+<div class="tbl-wrap"><table>
+<tr><th>ข้อ</th><th>ภาพ</th><th>คำตอบ</th></tr>
+<tr><td>104</td><td>เก๋งท้ายยาวหลังคาคลุมถึงท้าย</td><td class="ok-t">รถเก๋งสามตอนแวน</td></tr>
+<tr><td>105</td><td>หัวลาก</td><td class="ok-t">รถลากจูง</td></tr>
+<tr><td>106</td><td>ตัวพ่วงมีเพลาหน้า-หลัง รับน้ำหนักเองได้</td><td class="ok-t">รถพ่วง 2 เพลา</td></tr>
+<tr><td>107</td><td>ตัวพ่วงด้านหน้าพาดบนหัวลาก</td><td class="ok-t">รถกึ่งพ่วง 2 เพลา</td></tr>
+<tr><td>108</td><td>กระบะมีหลังคา/ที่นั่งสองแถวท้าย</td><td class="ok-t">รถนั่งสองตอน สองแถว</td></tr>
+</table></div>
+<div class="mn">"<b>พ่วง</b> = ยืนเองได้ (มีเพลาหน้า+ท้าย) · <b>กึ่งพ่วง</b> = ต้องพิงหัวลาก (น้ำหนักหน้าพาดบนรถลาก)"</div>
+</div>
+
+<div class="card">
+<h3>🔍 หลักเกณฑ์วินิจฉัย รย.1/2/3/12 (ข้อ 113–131) — จำ "จุดผิด" ที่ใช้ซ้ำ</h3>
+<p>โจทย์กลุ่มนี้ถาม "ข้อใดกล่าว<b>ไม่</b>ถูกต้อง" วนๆ โดยตัวผิดที่ใช้ซ้ำบ่อยสุดคือ:</p>
+<ul>
+<li><b>"แนวล้อเบี่ยงเบนไม่เกิน 50 มม."</b> → ผิด! ของจริงคือ <b>±5 ม./กม. (±5 มม./ม.)</b> — โผล่เป็นตัวเฉลย "ข้อผิด" ในข้อ 113, 121, 129</li>
+<li><b>"คันบังคับเลี้ยว/แกนบังคับเลี้ยว"</b> ในโจทย์ รย.1–2 → ผิด! เพราะเป็นศัพท์ของ<b>จักรยานยนต์ (รย.12)</b> รถยนต์ใช้ "พวงมาลัย" (ข้อ 124, 126–128)</li>
+<li><b>"แท่นเครื่อง+ยางแท่นเครื่องยึดแน่น"</b> → เป็นคำตอบ "ถูก" ของ รย.1/2/3 (ข้อ 114, 130) แต่เป็นคำตอบ "ผิด" ใน รย.12 (ข้อ 116 — มอไซค์ไม่มีเกณฑ์นี้)</li>
+<li>มอเตอร์ไฟฟ้า: <b>รย.12 ต้อง ≥ 0.25 kW</b> ("ไม่น้อยกว่า 1.5 kW" = ผิด, ข้อ 117) · รย.1/2 "ไม่น้อยกว่า 5 kW" ก็เป็นตัวผิดเช่นกัน (ข้อ 123, 125) — เห็นตัวเลข kW ในกลุ่มนี้ให้สงสัยว่าเป็นข้อผิดไว้ก่อน</li>
+<li>ตรวจพินิจ: น้ำมันเครื่องสีดำเหนียว = <b>ผ่านได้</b> (ไม่ใช่เหตุไม่ผ่าน) · ทะเบียน/เลขตัวรถ/เลขเครื่อง/สี<b>ไม่ตรง → ระงับการตรวจ + ส่งนายทะเบียน</b> · รถลักษณะไม่ตรงคู่มือ (ปิ๊กอัพไร้หลังคา) → ระงับการตรวจ</li>
+<li>อุปกรณ์เสริม: <b>ราวเหล็กข้างรถ = ต้องแจ้งนายทะเบียนก่อน</b> · โรลบาร์ / แร็คหลังคา / อุปกรณ์ขนจักรยาน / เปลี่ยนเบาะ / เกจวัด = <b>ไม่ต้องแจ้ง</b> ตรวจได้เลย</li>
+</ul>
+</div>
+</section>
+
+<section id="z5">
+<h2><span class="zone">โซน ⑤</span> การตรวจวัด — หัวใจของครึ่งหลัง <span class="range">(ข้อ 132–195)</span></h2>
+
+<div class="card">
+<h3>💨 ไอเสีย CO / HC (ข้อ 132–143)</h3>
+<div class="tbl-wrap"><table>
+<tr><th>รถ / เชื้อเพลิง</th><th>CO (%)</th><th>HC (ppm)</th></tr>
+<tr><td>ขนส่ง — เบนซิน/แก๊สโซฮอล์</td><td><b>4.5</b></td><td><b>600</b></td></tr>
+<tr><td>ขนส่ง — ก๊าซธรรมชาติ (NGV)</td><td><b>2.0</b></td><td><b>600</b></td></tr>
+<tr><td>จยย. จดก่อน 1 ก.ค. 49</td><td><b>4.5</b></td><td><b>10,000</b></td></tr>
+<tr><td>จยย. จด 1 ก.ค. 49 – 31 ธ.ค. 52</td><td><b>3.5</b></td><td><b>2,000</b></td></tr>
+<tr><td>จยย. จดตั้งแต่ 1 ม.ค. 53</td><td><b>2.5</b></td><td><b>1,000</b></td></tr>
+<tr><td>รย.1 จด 1 ต.ค. 2537 (ยุคใหม่)</td><td><b>1.5</b></td><td><b>200</b></td></tr>
+</table></div>
+<div class="mn">"ขนส่ง: เบนซิน <b>4.5</b> ก๊าซ <b>2.0</b> HC <b>600</b> เท่ากัน · จยย. ลดขั้นบันได <b>4.5→3.5→2.5</b> คู่กับ <b>หมื่น→2พัน→พัน</b>"</div>
+<ul>
+<li>วัดที่<b>รอบเดินเบา</b> · วัด <b>2 ครั้ง ใช้ค่าเฉลี่ย</b> · ค่าแกว่งไม่นิ่ง = <b>ไม่บันทึกผล</b></li>
+<li>เบนซินสลับก๊าซ = <b>วัดทั้ง 2 เชื้อเพลิง</b> · สอดหัววัดไม่ได้ก็<b>ห้าม</b>จ่อปลายท่อแทน (เป็นตัวเลือกผิด)</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🖤 ควันดำ (ข้อ 144–156, 190)</h3>
+<div class="tbl-wrap"><table>
+<tr><th>ระบบวัด</th><th>เกณฑ์ (ไม่มีภาระ)</th></tr>
+<tr><td>กระดาษกรอง</td><td>ไม่เกิน <b>50%</b></td></tr>
+<tr><td>วัดความทึบแสง</td><td>ไม่เกิน <b>45%</b></td></tr>
+</table></div>
+<ul>
+<li>วัด 2 ครั้ง <b>ใช้ค่าสูงสุด</b> (ทั้งแบบมีภาระและไม่มีภาระ) — <b>ไม่ใช่ค่าเฉลี่ย!</b></li>
+<li>สองครั้งต่างกันเกิน <b>6%</b> → ยกเลิกแล้ววัดใหม่ 2 ครั้ง</li>
+<li>วิธีเร่ง: <b>เร่งเร็วจนสุดคันเร่ง</b> เก็บตัวอย่าง<b>ขณะเริ่มกดคันเร่ง</b></li>
+<li>หลายท่อ → วัด<b>ท่อที่ควันมากสุด</b> (ไม่ใช่ "ท่อใดท่อหนึ่ง")</li>
+<li>เตรียมรถ: เกียร์<b>ว่าง</b> (ตัวเลือก "เกียร์จอด" = ผิด ออกซ้ำ 2 ข้อ 144–145) · <b>ปิด</b>แอร์ก่อนวัด</li>
+</ul>
+<div class="mn">"กระดาษ <b>50</b> ทึบ <b>45</b> ต่างเกิน <b>6</b> วัดใหม่ · ควันดำเอา<b>ค่าสูงสุด</b>"</div>
+</div>
+
+<div class="card">
+<h3>💡 โคมไฟหน้า (ข้อ 157–169, 199)</h3>
+<div class="tbl-wrap"><table>
+<tr><th>เรื่อง</th><th>ค่า</th></tr>
+<tr><td>พุ่งต่ำ — ความเข้ม/ดวง</td><td>ตั้งแต่ <b>6,400</b> แคนเดลา</td></tr>
+<tr><td>พุ่งไกล — ความเข้ม/ดวง</td><td>ตั้งแต่ <b>12,000</b> แคนเดลา</td></tr>
+<tr><td>พุ่งไกล — รวมทุกดวง</td><td>ไม่เกิน <b>430,000</b> แคนเดลา</td></tr>
+<tr><td>พุ่งต่ำ — ความสูงติดตั้ง</td><td><b>40 – 135 ซม.</b> จากผิวทาง</td></tr>
+<tr><td>พุ่งต่ำ — มุมกด</td><td><b>0.29° – 2.29°</b> (= ร้อยละ <b>0.5 – 4.0</b>)</td></tr>
+<tr><td>ทิศเบี่ยงเบน (ทั้งต่ำ/ไกล)</td><td><b>ไม่เบนขวา</b> · พุ่งไกลไม่สูงเกินแนวระนาบ</td></tr>
+<tr><td>โคมไฟแสดงส่วนสูง</td><td>ต้องมีเมื่อรถสูงเกิน <b>250 ซม.</b></td></tr>
+<tr><td>แตร (พ.ร.บ.ขนส่ง)</td><td><b>90–115 dBA</b> วัดห่างหน้ารถ <b>2 ม.</b></td></tr>
+</table></div>
+<div class="mn">"ต่ำ <b>64ร้อย</b> ไกล <b>12พัน</b> รวมไม่เกิน <b>43หมื่น</b> · มุมกด <b>0.29–2.29</b> (จำเลข 29 ซ้ำ) · ห้ามเบนขวา (เดี๋ยวแยงตาคนสวน)"</div>
+</div>
+
+<div class="card">
+<h3>🛑 เบรก + ศูนย์ล้อ (ข้อ 170–174 — 5 ข้อฟรี)</h3>
+<div class="tbl-wrap"><table>
+<tr><th>เรื่อง</th><th>เกณฑ์</th></tr>
+<tr><td>เบรกหลัก (เบรกเท้า) ทุกล้อรวม</td><td>≥ <b>50%</b> ของน้ำหนักรถ</td></tr>
+<tr><td>ผลต่างซ้าย–ขวา เพลาเดียวกัน</td><td>≤ <b>25%</b> ของแรงสูงสุดในเพลานั้น</td></tr>
+<tr><td>เบรกมือ (ขณะจอด) ทุกล้อรวม</td><td>≥ <b>20%</b> ของน้ำหนักรถ</td></tr>
+<tr><td>ศูนย์ล้อหน้า</td><td>เบี่ยงเบน ≤ <b>±5 ม./กม.</b> (= ±5 มม./ม.)</td></tr>
+</table></div>
+<div class="mn">"เบรก <b>50–25–20</b> · ศูนย์ล้อ <b>±5</b>"</div>
+</div>
+
+<div class="card">
+<h3>🔊 วัดเสียง (ข้อ 175–195 — กลุ่มใหญ่สุด 20 ข้อ)</h3>
+<p><b>เซ็ตอัพมาตรฐาน (ระยะ 0.5 ม.)</b> — ออกซ้ำหลายข้อมาก:</p>
+<ul>
+<li>ไมค์สูง<b>เท่าปลายท่อไอเสีย</b> แต่ไม่ต่ำกว่า <b>0.2 ม.</b> · ห่างปลายท่อ <b>0.5 ม.</b> · ขนานพื้น ทำมุม <b>45°</b> กับทิศไอเสีย</li>
+<li>แบบระยะ <b>7.5 ม.</b> → ตั้งไมค์สูง <b>1.2 ม.</b></li>
+<li>ตั้งเครื่อง: วงจรถ่วงน้ำหนัก <b>เดซิเบลเอ (dBA)</b> + ความไวตอบรับ <b>Fast</b> ("C" และ "Slow" = ตัวผิด) · ปรับเทียบด้วย <b>Acoustic Calibrator</b></li>
+<li>รถจอดห่างผนัง/สิ่งสะท้อน <b>เกิน 1 เมตร</b> (ตัวเลือก "ไม่เกิน 0.5 ม." = ผิด)</li>
+<li>วัด 2 ครั้ง <b>ใช้ค่าสูงสุด</b> · ต่างกันเกิน <b>2 dBA</b> → เริ่มวัดใหม่ (เช่น 87.50 กับ 89.60 ต่าง 2.10 → วัดใหม่)</li>
+<li>จยย.: เร่ง <b>3/4 หรือ 1/2 ของรอบที่ให้กำลังสูงสุด</b></li>
+</ul>
+<p><b>ท่อไอเสียหลายท่อ — จุดที่คนพลาดสุด:</b></p>
+<div class="tbl-wrap"><table>
+<tr><th>กรณี</th><th>วัดอย่างไร</th></tr>
+<tr><td>หม้อพัก<b>คนละใบ</b> (ห่างเท่าไรก็ตาม)</td><td>วัด<b>ทุกท่อ</b></td></tr>
+<tr><td>หม้อพักใบเดียว + ปลายท่อห่าง<b>เกิน 0.3 ม.</b></td><td>วัด<b>ทุกท่อ</b></td></tr>
+<tr><td>หม้อพักใบเดียว + ห่าง<b>ไม่เกิน 0.3 ม.</b></td><td>วัดเฉพาะท่อที่<b>ยื่นนอกตัวถังมากสุด</b> (ท่อเดียว)</td></tr>
+</table></div>
+<div class="mn">"เสียง: <b>0.5 ม. – 45° – 0.2 ม. – dBA Fast</b> · ต่างเกิน <b>2</b> วัดใหม่ · แทบทุกกรณีวัด<b>ทุกท่อ</b> ยกเว้นหม้อพักเดียว+ชิดกัน"</div>
+</div>
+</section>
+
+<section id="z6">
+<h2><span class="zone">โซน ⑥</span> ก๊าซ CNG / LPG <span class="range">(ข้อ 196–211)</span></h2>
+<div class="card">
+<ul>
+<li><b>CNG</b> = Compressed Natural Gas — ก๊าซธรรมชาติ<b>อัดความดันสูง</b> ส่วนใหญ่คือ<b>มีเทน</b> สถานะเป็น<b>ก๊าซ</b></li>
+<li>วาล์ว 3 ตัว อย่าสลับหน้าที่:
+  <ul>
+  <li><b>Excess flow valve</b> → ทำงานเมื่อ<b>ท่อแรงดันสูงขาด</b> (กันก๊าซทะลัก)</li>
+  <li><b>Pressure relief device (PRD)</b> → <b>ระบายความดัน</b>เมื่อถังร้อน/ความดันเกิน</li>
+  <li><b>ลิ้นเปิด-ปิดอัตโนมัติ</b> → ไม่มีไฟเลี้ยง = <b>ปิด</b> (normally closed)</li>
+  </ul></li>
+<li>ทดสอบรั่ว CNG โดยวิศวกร → ใช้ <b>Gas detector ก่อน</b> · ทดสอบรั่ว LPG → ทำ<b>เมื่อติดตั้งเสร็จ</b></li>
+<li>ถัง LPG: ครบ <b>10 ปี</b> ตรวจ/ทดสอบครั้งแรก → หลังจากนั้น<b>ทุก 5 ปี</b> · <b>ห้าม</b>ติดถังบนหลังคา/เหนือห้องโดยสาร · ห้ามติดใกล้ แหล่งความร้อน + ประกายไฟ + สารเคมี</li>
+<li>ถังติดจาก<b>ผู้ผลิต</b> (มีหนังสือรับรอง) → ตรวจกับผู้ตรวจทั่วไปเมื่อ<b>ครบ 5 ปี</b> หรือเมื่อเปลี่ยนส่วนควบ · เปลี่ยนถัง CNG → ดู<b>หนังสือรับรองการติดตั้ง</b>เป็นอันดับแรก</li>
+<li>เครื่องหมายติดรถใช้ก๊าซ: พ.ร.บ.รถยนต์ → <b>ท้ายรถ</b> · พ.ร.บ.ขนส่ง (รถบรรทุก) → <b>ข้างหัวเก๋งทั้ง 2 ด้าน</b></li>
+<li>กฎกระทรวงคุม LPG ใน รย.1 = ฉบับ <b>พ.ศ. 2551</b> · ปลายท่อไอเสีย: ห้ามออก<b>ด้านซ้าย</b>ท้ายรถ (ข้อ 191)</li>
+</ul>
+<div class="mn">"Excess=<b>ท่อขาด</b> · PRD=<b>ร้อน/ดันเกิน</b> · ลิ้นออโต้=<b>ไฟหมดก็ปิด</b> · ถัง LPG <b>10 แล้วทุก 5</b>"</div>
+</div>
+</section>
+
+<section id="traps">
+<h2>🎯 กับดักรวม — ตารางที่ข้อสอบชอบเอามาสลับกัน</h2>
+<div class="card">
+<h3>ค่าเฉลี่ย vs ค่าสูงสุด (สลับกันบ่อยสุดในชุดนี้)</h3>
+<div class="tbl-wrap"><table>
+<tr><th>การวัด</th><th>วัดกี่ครั้ง</th><th>ใช้ค่าไหนตัดสิน</th><th>ต่างกันเกินเท่าไรวัดใหม่</th></tr>
+<tr><td>ไอเสีย CO/HC</td><td>2</td><td class="ok-t">ค่าเฉลี่ย</td><td>—</td></tr>
+<tr><td>ควันดำ</td><td>2</td><td class="ok-t">ค่าสูงสุด</td><td><b>6%</b></td></tr>
+<tr><td>เสียง</td><td>2</td><td class="ok-t">ค่าสูงสุด</td><td><b>2 dBA</b></td></tr>
+</table></div>
+<div class="mn">"<b>ไอเสียใจดีใช้ค่าเฉลี่ย</b> — ที่เหลือ (ควันดำ/เสียง) โหดใช้ค่าสูงสุด"</div>
+</div>
+<div class="card">
+<h3>เช็กลิสต์ตัวเลขหลอก 30 วินาทีก่อนเข้าสอบ</h3>
+<ul>
+<li>บัตร: <b>4 ประเภท</b> · ต่อ 180/30/ขาดไม่เกิน 1 ปี · โทษระงับ <b>7-15-30-ถอน</b></li>
+<li>เลิกกิจการ <b>60 วัน</b> · เก็บข้อมูล <b>≥1 ปี</b> · ตรวจล่วงหน้า <b>3 เดือน</b> · ตรวจซ้ำเกิน <b>15 วัน</b> ตรวจใหม่หมด</li>
+<li>IT: <b>50–100KB / 6Mbps / 1 ล้านพิกเซล</b></li>
+<li>รย.2 ≤ <b>12 ที่นั่ง</b> · เส้นแบ่ง พ.ร.บ. <b>2,200 กก.</b> · รถ 7 ปี / จยย. 5 ปี</li>
+<li>ไอเสีย: <b>4.5/600</b>, ก๊าซ <b>2.0/600</b> · จยย. <b>4.5→3.5→2.5</b></li>
+<li>ควันดำ: <b>50 / 45 / 6</b> · เบรก: <b>50 / 25 / 20</b> · ศูนย์ล้อ <b>±5</b></li>
+<li>ไฟ: <b>6,400 / 12,000 / 430,000</b> · มุมกด <b>0.29–2.29°</b> · สูง 40–135 ซม. · รถสูงเกิน <b>250 ซม.</b> ติดไฟส่วนสูง · แตร <b>90–115</b></li>
+<li>เสียง: <b>0.5 ม. / 45° / 0.2 ม. / 1.2 ม.(ที่ 7.5 ม.) / dBA Fast / ต่าง 2 วัดใหม่ / ท่อห่าง 0.3</b></li>
+<li>ก๊าซ: ถัง <b>10 ปีแรก แล้วทุก 5 ปี</b> · ลิ้นออโต้ = ปกติ<b>ปิด</b></li>
+</ul>
+</div>
+</section>
+
+<footer class="src">
+  สรุปจากการวิเคราะห์โจทย์จริงทั้ง 211 ข้อของ <a href="https://pj-exam.vercel.app/exam">แนวข้อสอบ E-Learning (ตรอ.) แบบต่ออายุ</a> · ใช้คู่กับ<b>ไฟล์เฉลยละเอียด</b>ที่ทำไว้ก่อนหน้า · ตัวเลขทั้งหมดอ้างอิงจากคำตอบที่ระบบเฉลยไว้
+</footer>
+</div>
